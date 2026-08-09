@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bennittah Ngazoire — AI Engineer</title>
+<meta name="description" content="AI Engineer building retrieval and evaluation systems for LLM products. Measured results, stated limitations, working code.">
+
+<meta property="og:title" content="Bennittah Ngazoire — AI Engineer">
+<meta property="og:description" content="I build AI systems that know when they don't know.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bennittah.github.io">
+<meta name="twitter:card" content="summary">
+
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2310605c'/><text x='16' y='23' font-size='19' font-family='Georgia,serif' fill='%23fbfaf7' text-anchor='middle'>B</text></svg>">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="topnav" aria-label="Primary">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">Bennittah&nbsp;Ngazoire</a>
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#approach">Approach</a></li>
+      <li><a href="#credentials">Credentials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <p class="eyebrow">AI Engineer</p>
+    <h1>I build AI systems that know when they don't know.</h1>
+    <p class="lede">
+      Retrieval that surfaces the right context, evaluation that proves it did, and
+      services that fail in predictable ways. An LLM feature that cannot abstain,
+      cannot cite, and cannot be measured is <em>a demo, not a product</em>.
+    </p>
+    <ul class="links">
+      <li><a class="primary" href="#work">See the work</a></li>
+      <li><a href="https://github.com/Bennittah/grounded-rag">Read the findings</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ── What I do ────────────────────────────────────────────────────────── -->
+<section id="approach">
+  <div class="wrap">
+    <h2>What I do</h2>
+    <div class="three-up">
+      <div class="pillar">
+        <h3>Retrieval systems</h3>
+        <p>
+          Chunking, hybrid and lexical retrieval, reranking. Getting the right context
+          in front of the model, because retrieval quality is the ceiling on answer
+          quality and no amount of prompting raises it.
+        </p>
+      </div>
+      <div class="pillar">
+        <h3>Evaluation harnesses</h3>
+        <p>
+          Recall, MRR, faithfulness, abstention — measured separately, because a single
+          blended score hides the failure mode that actually gets a system pulled from
+          production.
+        </p>
+      </div>
+      <div class="pillar">
+        <h3>Shipping the service</h3>
+        <p>
+          The unglamorous half: typed APIs, graceful degradation, container builds, CI,
+          and a test suite that runs without an API key.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── How I work ───────────────────────────────────────────────────────── -->
+<section>
+  <div class="wrap">
+    <h2>How I work</h2>
+    <ol class="steps">
+      <li>
+        <h3>Define what "working" means</h3>
+        <p>
+          Before any model call: what does a correct answer look like, and what does a
+          correct <em>refusal</em> look like? Most RAG projects skip the second question
+          and discover it in production.
+        </p>
+      </li>
+      <li>
+        <h3>Measure the baseline first</h3>
+        <p>
+          A number is meaningless without the trivial alternative beside it. 69% accuracy
+          against a 61.8% majority-class baseline is a very different claim from 69%
+          alone — and only one of them is honest.
+        </p>
+      </li>
+      <li>
+        <h3>Change one thing, re-measure</h3>
+        <p>
+          Ablations over intuition. If a reranker, a chunking strategy or a bigger model
+          cannot be shown to have helped on a held-out set, it did not earn its latency.
+        </p>
+      </li>
+    </ol>
+    <p class="pull">Built on evidence, and the limitations are in the README — not saved for the interview.</p>
+  </div>
+</section>
+
+<!-- ── Work ─────────────────────────────────────────────────────────────── -->
+<section id="work">
+  <div class="wrap">
+    <h2>Work</h2>
+    <p class="section-note">
+      <span id="project-count">—</span> projects. Every number below is measured, and
+      each repository states its own limitations.
+    </p>
+
+    <div class="filterbar" id="filters" role="group" aria-label="Filter projects by type"></div>
+    <p class="sr-only" id="filter-status" role="status" aria-live="polite"></p>
+
+    <div id="featured-projects"></div>
+
+    <details class="earlier" id="earlier">
+      <summary>Earlier analysis work</summary>
+      <ul class="stack" id="compact-projects"></ul>
+    </details>
+
+    <noscript>
+      <p class="finding">
+        This page renders its project list with JavaScript. With it disabled, browse the
+        repositories directly at <a href="https://github.com/Bennittah">github.com/Bennittah</a>.
+      </p>
+    </noscript>
+  </div>
+</section>
+
+<!-- ── Credentials ──────────────────────────────────────────────────────── -->
+<section id="credentials">
+  <div class="wrap">
+    <h2>Credentials</h2>
+    <p class="section-note">
+      Every stage of the path into AI engineering is certified. Each credential links to
+      its issuer's verification page.
+    </p>
+    <div class="two-col">
+      <div>
+        <h3>Postgraduate programs</h3>
+        <ul class="stack">
+          <li>
+            <a href="https://la.utexas.edu/texasexeced/digitalVerification.html?key=kcwLh">AI &amp; Machine Learning: Business Applications</a>
+            <span class="meta">UT Austin + Great Lakes &middot; Apr 2023</span>
+          </li>
+          <li>
+            <a href="https://la.utexas.edu/texasexeced/digitalVerification.html?key=htvcD">Data Science &amp; Business Analytics</a>
+            <span class="meta">UT Austin + Great Lakes &middot; Jan 2023</span>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3>Microsoft certifications</h3>
+        <ul class="stack">
+          <li><a href="https://learn.microsoft.com/api/credentials/share/en-us/BennittahNgazoire-7620/2331D26E00F04139?sharingId=C0140C80458F8704">Azure Data Scientist Associate</a><span class="meta">AI &amp; machine learning</span></li>
+          <li>Fabric Data Engineer Associate<span class="meta">Data engineering</span></li>
+          <li><a href="https://learn.microsoft.com/api/credentials/share/en-us/BennittahNgazoire-7620/321D0E6E147C23A7?sharingId=C0140C80458F8704">Power BI Data Analyst Associate</a><span class="meta">Analytics</span></li>
+          <li><a href="https://learn.microsoft.com/api/credentials/share/en-us/BennittahNgazoire-7620/DA8B326D480390AF?sharingId=C0140C80458F8704">Azure Developer Associate</a><span class="meta">Software engineering</span></li>
+        </ul>
+        <p class="footnote">
+          Also holds
+          <a href="https://learn.microsoft.com/api/credentials/share/en-gb/BennittahNgazoire-7620/78699B8BAC69A8A?sharingId=C0140C80458F8704">Azure AI Fundamentals</a>
+          and
+          <a href="https://learn.microsoft.com/api/credentials/share/en-us/BennittahNgazoire-7620/72844F06C755B639?sharingId=C0140C80458F8704">Azure Fundamentals</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Contact ──────────────────────────────────────────────────────────── -->
+<section id="contact">
+  <div class="wrap">
+    <h2>Get in touch</h2>
+    <p>
+      Open to AI Engineering roles. The fastest way to see how I work is
+      <a href="https://github.com/Bennittah/grounded-rag">grounded-rag</a> — read the
+      Limitations section first; I put it there on purpose.
+    </p>
+    <ul class="links">
+      <li><a class="primary" href="mailto:ngazoireb@gmail.com">Email me</a></li>
+      <li><a href="https://www.linkedin.com/in/bennittah-ngazoire/">LinkedIn</a></li>
+      <li><a href="https://github.com/Bennittah">GitHub</a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© <span id="year">2026</span> Bennittah Ngazoire</p>
+    <p>Built by hand — no framework, no build step, one stylesheet.</p>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="projects.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
