@@ -42,6 +42,37 @@
 
 window.PROJECTS = [
   {
+    slug: "prompt-architect",
+    title: "prompt-architect",
+    kind: "AI Engineering",
+    featured: true,
+    tagline: "Spec out a coding prompt before you spend a token on it.",
+
+    summary: `Two surfaces on one idea. A browser page compiles a structured
+              prompt live from a filled-in spec - goal, stack, constraints,
+              requirements, success criteria, output format - and a Python
+              CLI does the same for four kinds of engineering work, with an
+              optional refinement pass through Claude Opus 5.`,
+
+    metrics: [
+      { value: "0", label: "network requests" },
+      { value: "4", label: "prompt templates" },
+      { value: "20", label: "tests" },
+    ],
+
+    finding: `The page claimed no data leaves your browser while loading a
+              webfont from a third party - which hands every visitor's IP and
+              referrer to Google before the first keystroke. A privacy claim
+              and a CDN font are not compatible, and the fix cost a typeface:
+              system font stacks in exchange for a claim that is actually
+              true, and a tool that now works offline.`,
+
+    stack: ["JavaScript", "HTML", "CSS", "Python", "Claude Opus 5"],
+    repo: "https://github.com/Bennittah/prompt-architect",
+    demo: "https://bennittah.github.io/prompt-architect/",
+  },
+
+  {
     slug: "grounded-rag",
     title: "grounded-rag",
     kind: "AI Engineering",
