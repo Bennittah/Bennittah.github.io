@@ -48,26 +48,26 @@ window.PROJECTS = [
     featured: true,
     tagline: "Spec out a coding prompt before you spend a token on it.",
 
-    summary: `Two surfaces on one idea. A browser page compiles a structured
-              prompt live from a filled-in spec - goal, stack, constraints,
-              requirements, success criteria, output format - and a Python
-              CLI does the same for four kinds of engineering work, with an
-              optional refinement pass through Claude Opus 5.`,
+    summary: `Most weak prompts are not badly worded, they are underspecified -
+              the model is told the goal and left to guess the stack, the
+              constraints and what "done" means. This page makes those fields
+              explicit and compiles them live into a structured brief, in either
+              plain sections or XML tags. One HTML file, no build step.`,
 
     metrics: [
       { value: "0", label: "network requests" },
-      { value: "4", label: "prompt templates" },
-      { value: "20", label: "tests" },
+      { value: "8", label: "spec fields" },
+      { value: "26 KB", label: "single file" },
     ],
 
-    finding: `The page claimed no data leaves your browser while loading a
+    finding: `The first draft claimed no data leaves your browser while loading a
               webfont from a third party - which hands every visitor's IP and
-              referrer to Google before the first keystroke. A privacy claim
-              and a CDN font are not compatible, and the fix cost a typeface:
-              system font stacks in exchange for a claim that is actually
-              true, and a tool that now works offline.`,
+              referring page to that CDN before the first keystroke. A privacy
+              claim and a CDN font are not compatible, so the fix cost a
+              typeface: system font stacks in exchange for a claim that is
+              actually true, and a tool that now works with the network off.`,
 
-    stack: ["JavaScript", "HTML", "CSS", "Python", "Claude Opus 5"],
+    stack: ["JavaScript", "HTML", "CSS", "No dependencies"],
     repo: "https://github.com/Bennittah/prompt-architect",
     demo: "https://bennittah.github.io/prompt-architect/",
   },
