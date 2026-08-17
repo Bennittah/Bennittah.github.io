@@ -42,6 +42,39 @@
 
 window.PROJECTS = [
   {
+    slug: "diy-repair-qa-pipeline",
+    title: "diy-repair-qa-pipeline",
+    kind: "AI Engineering",
+    featured: true,
+    tagline: "Generates repair Q&A, scores it two ways, and fixes the judge before trusting it to fix the generator.",
+
+    summary: `A synthetic Home DIY Repair Q&A pipeline that generates structured answers,
+              scores them on 6 quality dimensions with both a human reviewer and an
+              independent LLM-as-judge, and uses their disagreement to drive two separate
+              correction cycles - first calibrating the judge, then correcting the
+              generator. Six prompt versions, two judge versions, every correction logged
+              with its trigger, hypothesis and measured result.`,
+
+    metrics: [
+      { value: "84%", label: "overall pass rate (v6)" },
+      { value: "+20pp", label: "human/LLM safety agreement after judge calibration" },
+      { value: "11", label: "logged iteration entries" },
+      { value: "50", label: "items per run, dual-labeled" },
+    ],
+
+    finding: `Comparing the baseline prompt (scored by the original judge) to the corrected
+              prompt (scored by a since-recalibrated judge) showed a 56% failure-rate drop.
+              Re-scoring both under the same calibrated judge showed 20-30%. The bigger
+              number was real, but partly measuring the judge getting less strict rather
+              than the generator getting better - a reminder that "before" and "after" need
+              the same evaluator, not just the same test set.`,
+
+    stack: ["Python", "Claude Sonnet 5", "Pydantic", "Hugging Face", "sentence-transformers"],
+    repo: "https://github.com/Bennittah/diy-repair-qa-pipeline",
+    demo: "",
+  },
+
+  {
     slug: "prompt-architect",
     title: "prompt-architect",
     kind: "AI Engineering",
