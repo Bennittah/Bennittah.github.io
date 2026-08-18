@@ -62,12 +62,13 @@ window.PROJECTS = [
       { value: "50", label: "items per run, dual-labeled" },
     ],
 
-    finding: `Comparing the baseline prompt (scored by the original judge) to the corrected
-              prompt (scored by a since-recalibrated judge) showed a 56% failure-rate drop.
-              Re-scoring both under the same calibrated judge showed 20-30%. The bigger
-              number was real, but partly measuring the judge getting less strict rather
-              than the generator getting better - a reminder that "before" and "after" need
-              the same evaluator, not just the same test set.`,
+    finding: `Two independent generations made the identical mistake on the same repair
+              task - naming a toilet tank lid as the safety hazard while ignoring the
+              shutoff valve the steps actually operate. Not noise: the same wrong answer,
+              arrived at twice. A one-sentence prompt patch fixed it, but the same fix pass
+              over-corrected an unrelated rule and briefly regressed a different category
+              before a second patch recovered it - a fix isn't verified until it's
+              re-measured, not just shipped.`,
 
     stack: ["Python", "Claude Sonnet 5", "Pydantic", "Hugging Face", "sentence-transformers"],
     repo: "https://github.com/Bennittah/diy-repair-qa-pipeline",
